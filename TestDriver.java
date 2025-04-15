@@ -79,9 +79,9 @@ public class TestDriver {
 
 		// Verify that decoded(encoded(source)) = source
 		if (sample.equals(decoded)) {
-			System.out.println("YES !! decoded(endoded(message)) == message");
+			System.out.println("YES !! decoded(encoded(message)) == message");
 		} else {
-			System.out.println("ERROR !! decoded(endoded(message)) != message");
+			System.out.println("ERROR !! decoded(encoded(message)) != message");
 		}
 
 	}
@@ -124,9 +124,9 @@ public class TestDriver {
 
 		// Verify that decoded(encoded(source)) = source
 		if (sample.equals(decodedMarkov)) {
-			System.out.println("\tYES !! decoded(endoded(message)) == message");
+			System.out.println("\tYES !! decoded(encoded(message)) == message");
 		} else {
-			System.out.println("\tERROR !! decoded(endoded(message)) != message");
+			System.out.println("\tERROR !! decoded(encoded(message)) != message");
 			for (int k = 0; k < decodedMarkov.length(); k++)
 				System.out.printf("%3d %s %3d %c %3d\n", k, sample.charAt(k), (int) sample.charAt(k),
 						decodedMarkov.charAt(k), (int) decodedMarkov.charAt(k));
@@ -146,9 +146,9 @@ public class TestDriver {
 
 		// Verify that decoded(encoded(source)) = source
 		if (sample.equals(decodedMarkov)) {
-			System.out.println("\tYES !! decoded(endoded(message)) == message");
+			System.out.println("\tYES !! decoded(encoded(message)) == message");
 		} else {
-			System.out.println("\tERROR !! decoded(endoded(message)) != message");
+			System.out.println("\tERROR !! decoded(encoded(message)) != message");
 			for (int k = 0; k < decodedMarkov.length(); k++)
 				System.out.printf("%3d %s %3d %c %3d\n", k, sample.charAt(k), (int) sample.charAt(k),
 						decodedMarkov.charAt(k), (int) decodedMarkov.charAt(k));
